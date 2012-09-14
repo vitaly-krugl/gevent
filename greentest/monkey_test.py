@@ -20,11 +20,9 @@ module_code = compile(module_source, test_filename, 'exec')
 
 if test_name.startswith('test_urllib2'):
     import test
-    import test_cookielib
     import test_urllib2
     test.test_urllib2 = test_urllib2
     sys.modules['test.test_urllib2'] = test_urllib2
-    sys.modules['test.test_cookielib'] = test_cookielib
 elif test_name == 'test_threading':
     import test
     import lock_tests
