@@ -10,3 +10,9 @@ install:
  - pip install greenlet --use-mirrors
  - python setup.py install
 script: cd greentest && python testrunner.py
+notifications:
+  email:
+    recipients:
+      - denis.bilenko@gmail.com
+    on_success: change
+    on_failure: change
