@@ -29,15 +29,18 @@ version = '%s.%s.%s' % sys.version_info[:3]
 if not os.path.exists(version):
     sys.exit('Directory %s not found in %s' % (version, os.getcwd()))
 
-os.chdir(version)
-
 
 class ContainsAll(object):
     def __contains__(self, item):
         return True
 
-import test_support
-test_support.use_resources = ContainsAll()
+
+import test.test_support
+test.test_support.use_resources = ContainsAll()
+
+
+os.chdir(version)
+
 
 total = 0
 failed = []
@@ -55,6 +58,7 @@ for test in tests:
 
 
 sys.stderr.write('%s/%s tests failed: %s\n' % (len(failed), total, failed))
+os.system('rm @test_*_tmp')
 
 if failed:
     sys.exit(1)
