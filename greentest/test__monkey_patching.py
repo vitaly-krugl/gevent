@@ -38,15 +38,16 @@ class ContainsAll(object):
 import test.test_support
 test.test_support.use_resources = ContainsAll()
 
+sys.path.append(os.getcwd())
 
 os.chdir(version)
-
 
 total = 0
 failed = []
 
 tests = set(glob.glob('test_*.py')) - set(['test_support.py'])
 tests = sorted(tests)
+
 
 for test in tests:
     total += 1
