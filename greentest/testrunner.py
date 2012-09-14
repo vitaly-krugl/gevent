@@ -19,10 +19,10 @@ By default '/tmp/testresults.sqlite3' is used and is unlinked before used.
 DEFAULT_FILENAME = 'tmp-testrunner.sqlite3'
 
 # the number of seconds each test script is allowed to run
-DEFAULT_TIMEOUT = 60
+DEFAULT_TIMEOUT = 300
 
 # the number of bytes of output that is recorded; the rest is thrown away
-OUTPUT_LIMIT = 50000
+OUTPUT_LIMIT = 500000
 
 import sys
 import os
