@@ -38,8 +38,7 @@ class ContainsAll(object):
 import test.test_support
 test.test_support.use_resources = ContainsAll()
 
-sys.path.append(os.getcwd())
-
+os.environ['PYTHONPATH'] = os.getcwd() + ':' + os.environ.get('PYTHONPATH', '')
 os.chdir(version)
 
 total = 0
