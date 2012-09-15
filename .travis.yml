@@ -4,12 +4,8 @@ python:
 #  - "2.6"
   - "2.7"
 #  - "3.2"
-before_install:
- - sudo apt-get update
- - sudo apt-get install -q python-psycopg2 python-sendfile
 install:
- - python -c "import psycopg2; print psycopg2"
- - pip install cython greenlet -q --use-mirrors
+ - pip install cython greenlet psycopg2 sendfile -q --use-mirrors
  - cython --version
  - python setup.py install
 script: cd greentest && python testrunner.py test__examples.py
