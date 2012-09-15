@@ -5,9 +5,9 @@ python:
   - "2.7"
 #  - "3.2"
 install:
- - pip install cython -q --use-mirrors
+ - sudo apt-get install -q python-psycopg2 python-sendfile
+ - pip install cython greenlet -q --use-mirrors
  - cython --version
- - pip install greenlet --use-mirrors
  - python setup.py install
 script: cd greentest && python testrunner.py
 notifications:
