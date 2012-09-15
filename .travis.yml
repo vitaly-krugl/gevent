@@ -4,8 +4,11 @@ python:
 #  - "2.6"
   - "2.7"
 #  - "3.2"
+before_install:
+ - sudo apt-get install update
+ - sudo apt-get install -q python-psycopg2 python-sendfile
 install:
- - sudo apt-get install -qq python-psycopg2 python-sendfile
+ - python -c "import psycopg2; print psycopg2"
  - pip install cython greenlet -q --use-mirrors
  - cython --version
  - python setup.py install
