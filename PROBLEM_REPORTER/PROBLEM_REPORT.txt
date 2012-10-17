@@ -1,0 +1,142 @@
+Process:         Python [99944]
+Path:            /System/Library/Frameworks/Python.framework/Versions/2.6/Resources/Python.app/Contents/MacOS/Python
+Identifier:      Python
+Version:         ??? (???)
+Code Type:       X86-64 (Native)
+Parent Process:  Python [95796]
+
+Date/Time:       2012-10-17 15:42:52.955 -0700
+OS Version:      Mac OS X 10.7.5 (11G63)
+Report Version:  9
+
+Interval Since Last Report:          421196 sec
+Crashes Since Last Report:           7
+Per-App Crashes Since Last Report:   5
+Anonymous UUID:                      4A6DDCF8-DA76-4CDA-930C-81997379D7C4
+
+Crashed Thread:  0  Dispatch queue: com.apple.main-thread
+
+Exception Type:  EXC_CRASH (SIGABRT)
+Exception Codes: 0x0000000000000000, 0x0000000000000000
+
+Application Specific Information:
+abort() called
+objc[99944]: garbage collection is OFF
+
+Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
+0   libsystem_kernel.dylib        	0x00007fff85e2382a __kill + 10
+1   libsystem_c.dylib             	0x00007fff85b8ca9c abort + 177
+2   org.python.python             	0x0000000108d90e3d 0x108ce4000 + 708157
+3   org.python.python             	0x0000000108d65cd6 PyEval_EvalFrameEx + 12264
+4   org.python.python             	0x0000000108d68da4 PyEval_EvalCodeEx + 2012
+5   org.python.python             	0x0000000108d68e19 PyEval_EvalCode + 54
+6   org.python.python             	0x0000000108d8016b 0x108ce4000 + 639339
+7   org.python.python             	0x0000000108d802f7 PyRun_StringFlags + 105
+8   org.python.python             	0x0000000108d8117d PyRun_SimpleStringFlags + 67
+9   org.python.python             	0x0000000108d8ce13 Py_Main + 1735
+10  org.python.python             	0x0000000108cdbe88 0x108cdb000 + 3720
+
+Thread 0 crashed with X86 Thread State (64-bit):
+  rax: 0x0000000000000000  rbx: 0x00007fff688d9610  rcx: 0x00007fff688d95f8  rdx: 0x0000000000000000
+  rdi: 0x0000000000018668  rsi: 0x0000000000000006  rbp: 0x00007fff688d9620  rsp: 0x00007fff688d95f8
+   r8: 0x00007fff688d90dc   r9: 0x00007fff688d90d8  r10: 0x00007fff85e24e62  r11: 0xffffff80002dad60
+  r12: 0x0000000000000004  r13: 0x0000000000000000  r14: 0x0000000000000000  r15: 0x0000000108f07638
+  rip: 0x00007fff85e2382a  rfl: 0x0000000000000202  cr2: 0x00007ff34945a000
+Logical CPU: 0
+
+Binary Images:
+       0x108cdb000 -        0x108cdbfff  org.python.python (2.6.7 - 2.6.7) <AC8412D8-E4C8-33A5-BF98-A4840D7B0D39> /System/Library/Frameworks/Python.framework/Versions/2.6/Resources/Python.app/Contents/MacOS/Python
+       0x108ce4000 -        0x108df0fff  org.python.python (2.6.7 - 2.6.7) <B25E0E3C-EBC6-38C8-B75A-182645F40ECA> /System/Library/Frameworks/Python.framework/Versions/2.6/Python
+    0x7fff688db000 -     0x7fff6890fbaf  dyld (195.6 - ???) <0CD1B35B-A28F-32DA-B72E-452EAD609613> /usr/lib/dyld
+    0x7fff840a6000 -     0x7fff840a7ff7  libsystem_blocks.dylib (53.0.0 - compatibility 1.0.0) <8BCA214A-8992-34B2-A8B9-B74DEACA1869> /usr/lib/system/libsystem_blocks.dylib
+    0x7fff854bb000 -     0x7fff854cdff7  libz.1.dylib (1.2.5 - compatibility 1.0.0) <30CBEF15-4978-3DED-8629-7109880A19D4> /usr/lib/libz.1.dylib
+    0x7fff854f4000 -     0x7fff854f8fff  libmathCommon.A.dylib (2026.0.0 - compatibility 1.0.0) <FF83AFF7-42B2-306E-90AF-D539C51A4542> /usr/lib/system/libmathCommon.A.dylib
+    0x7fff85530000 -     0x7fff85531fff  libdnsinfo.dylib (395.11.0 - compatibility 1.0.0) <853BAAA5-270F-3FDC-B025-D448DB72E1C3> /usr/lib/system/libdnsinfo.dylib
+    0x7fff859fa000 -     0x7fff85a70ff7  libc++.1.dylib (28.4.0 - compatibility 1.0.0) <A24FC3DA-4FFA-3DD2-9DCC-2B8D1B3BF97C> /usr/lib/libc++.1.dylib
+    0x7fff85b4b000 -     0x7fff85c28fef  libsystem_c.dylib (763.13.0 - compatibility 1.0.0) <41B43515-2806-3FBC-ACF1-A16F35B7E290> /usr/lib/system/libsystem_c.dylib
+    0x7fff85c62000 -     0x7fff85c9dfff  libsystem_info.dylib (??? - ???) <35F90252-2AE1-32C5-8D34-782C614D9639> /usr/lib/system/libsystem_info.dylib
+    0x7fff85c9e000 -     0x7fff85c9ffff  libDiagnosticMessagesClient.dylib (??? - ???) <3DCF577B-F126-302B-BCE2-4DB9A95B8598> /usr/lib/libDiagnosticMessagesClient.dylib
+    0x7fff85e0d000 -     0x7fff85e2dfff  libsystem_kernel.dylib (1699.32.7 - compatibility 1.0.0) <66C9F9BD-C7B3-30D4-B1A0-03C8A6392351> /usr/lib/system/libsystem_kernel.dylib
+    0x7fff85fac000 -     0x7fff85fadfff  libunc.dylib (24.0.0 - compatibility 1.0.0) <337960EE-0A85-3DD0-A760-7134CF4C0AFF> /usr/lib/system/libunc.dylib
+    0x7fff87573000 -     0x7fff8757bfff  libsystem_dnssd.dylib (??? - ???) <584B321E-5159-37CD-B2E7-82E069C70AFB> /usr/lib/system/libsystem_dnssd.dylib
+    0x7fff87830000 -     0x7fff87839ff7  libsystem_notify.dylib (80.1.0 - compatibility 1.0.0) <A4D651E3-D1C6-3934-AD49-7A104FD14596> /usr/lib/system/libsystem_notify.dylib
+    0x7fff878fd000 -     0x7fff8794bfff  libauto.dylib (??? - ???) <D8AC8458-DDD0-3939-8B96-B6CED81613EF> /usr/lib/libauto.dylib
+    0x7fff879f0000 -     0x7fff87a63fff  libstdc++.6.dylib (52.0.0 - compatibility 7.0.0) <6BDD43E4-A4B1-379E-9ED5-8C713653DFF2> /usr/lib/libstdc++.6.dylib
+    0x7fff87edd000 -     0x7fff87efafff  libxpc.dylib (77.19.0 - compatibility 1.0.0) <9F57891B-D7EF-3050-BEDD-21E7C6668248> /usr/lib/system/libxpc.dylib
+    0x7fff88f43000 -     0x7fff88f48ff7  libsystem_network.dylib (??? - ???) <5DE7024E-1D2D-34A2-80F4-08326331A75B> /usr/lib/system/libsystem_network.dylib
+    0x7fff8925f000 -     0x7fff89263fff  libdyld.dylib (195.5.0 - compatibility 1.0.0) <380C3F44-0CA7-3514-8080-46D1C9DF4FCD> /usr/lib/system/libdyld.dylib
+    0x7fff89c41000 -     0x7fff89c42ff7  libremovefile.dylib (21.1.0 - compatibility 1.0.0) <739E6C83-AA52-3C6C-A680-B37FE2888A04> /usr/lib/system/libremovefile.dylib
+    0x7fff8a45e000 -     0x7fff8a463fff  libcache.dylib (47.0.0 - compatibility 1.0.0) <1571C3AB-BCB2-38CD-B3B2-C5FC3F927C6A> /usr/lib/system/libcache.dylib
+    0x7fff8a677000 -     0x7fff8a681ff7  liblaunch.dylib (392.39.0 - compatibility 1.0.0) <8C235D13-2928-30E5-9E12-2CC3D6324AE2> /usr/lib/system/liblaunch.dylib
+    0x7fff8b3ca000 -     0x7fff8b3cffff  libcompiler_rt.dylib (6.0.0 - compatibility 1.0.0) <98ECD5F6-E85C-32A5-98CD-8911230CB66A> /usr/lib/system/libcompiler_rt.dylib
+    0x7fff8b58e000 -     0x7fff8b58fff7  libsystem_sandbox.dylib (??? - ???) <2A09E4DA-F47C-35CB-B70C-E0492BA9F20E> /usr/lib/system/libsystem_sandbox.dylib
+    0x7fff8b590000 -     0x7fff8b5bdfe7  libSystem.B.dylib (159.1.0 - compatibility 1.0.0) <7BEBB139-50BB-3112-947A-F4AA168F991C> /usr/lib/libSystem.B.dylib
+    0x7fff8b700000 -     0x7fff8b70efff  libdispatch.dylib (187.10.0 - compatibility 1.0.0) <8E03C652-922A-3399-93DE-9EA0CBFA0039> /usr/lib/system/libdispatch.dylib
+    0x7fff8b722000 -     0x7fff8b924fff  libicucore.A.dylib (46.1.0 - compatibility 1.0.0) <0176782F-9526-3905-813A-7A5676EC2C86> /usr/lib/libicucore.A.dylib
+    0x7fff8c9a6000 -     0x7fff8c9b1ff7  libc++abi.dylib (14.0.0 - compatibility 1.0.0) <8FF3D766-D678-36F6-84AC-423C878E6D14> /usr/lib/libc++abi.dylib
+    0x7fff8ce67000 -     0x7fff8ce6dff7  libunwind.dylib (30.0.0 - compatibility 1.0.0) <1E9C6C8C-CBE8-3F4B-A5B5-E03E3AB53231> /usr/lib/system/libunwind.dylib
+    0x7fff8cecc000 -     0x7fff8d0a0ff7  com.apple.CoreFoundation (6.7.2 - 635.21) <62A3402E-A4E7-391F-AD20-1EF20236CE1B> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+    0x7fff8f194000 -     0x7fff8f19bfff  libcopyfile.dylib (85.1.0 - compatibility 1.0.0) <0AB51EE2-E914-358C-AC19-47BC024BDAE7> /usr/lib/system/libcopyfile.dylib
+    0x7fff8f2db000 -     0x7fff8f3bfe5f  libobjc.A.dylib (228.0.0 - compatibility 1.0.0) <871E688B-CF57-3BC7-80D6-F6476DFF109B> /usr/lib/libobjc.A.dylib
+    0x7fff8f6ed000 -     0x7fff8f72fff7  libcommonCrypto.dylib (55010.0.0 - compatibility 1.0.0) <BB770C22-8C57-365A-8716-4A3C36AE7BFB> /usr/lib/system/libcommonCrypto.dylib
+    0x7fff8fc73000 -     0x7fff8fc73fff  libkeymgr.dylib (23.0.0 - compatibility 1.0.0) <61EFED6A-A407-301E-B454-CD18314F0075> /usr/lib/system/libkeymgr.dylib
+    0x7fff8fd34000 -     0x7fff8fd3afff  libmacho.dylib (800.0.0 - compatibility 1.0.0) <165514D7-1BFA-38EF-A151-676DCD21FB64> /usr/lib/system/libmacho.dylib
+    0x7fff90b6c000 -     0x7fff90b6efff  libquarantine.dylib (36.7.0 - compatibility 1.0.0) <8D9832F9-E4A9-38C3-B880-E5210B2353C7> /usr/lib/system/libquarantine.dylib
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 21103
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=58.7M resident=29.5M(50%) swapped_out_or_unallocated=29.2M(50%)
+Writable regions: Total=19.6M written=1532K(8%) resident=2000K(10%) swapped_out=0K(0%) unallocated=17.6M(90%)
+ 
+REGION TYPE                      VIRTUAL
+===========                      =======
+MALLOC                             11.3M
+MALLOC guard page                    32K
+STACK GUARD                        56.0M
+Stack                              8192K
+__DATA                             1264K
+__LINKEDIT                         49.1M
+__TEXT                             9800K
+__UNICODE                           544K
+shared memory                        12K
+===========                      =======
+TOTAL                             135.8M
+
+Model: MacBookPro8,2, BootROM MBP81.0047.B27, 4 processors, Intel Core i7, 2.2 GHz, 8 GB, SMC 1.69f3
+Graphics: AMD Radeon HD 6750M, AMD Radeon HD 6750M, PCIe, 512 MB
+Graphics: Intel HD Graphics 3000, Intel HD Graphics 3000, Built-In, 512 MB
+Memory Module: BANK 0/DIMM0, 4 GB, DDR3, 1333 MHz, 0x80CE, 0x4D34373142353237334448302D4348392020
+Memory Module: BANK 1/DIMM0, 4 GB, DDR3, 1333 MHz, 0x80CE, 0x4D34373142353237334448302D4348392020
+AirPort: spairport_wireless_card_type_airport_extreme (0x14E4, 0xD6), Broadcom BCM43xx 1.0 (5.106.198.19.22)
+Bluetooth: Version 4.0.8f17, 2 service, 18 devices, 1 incoming serial ports
+Network Service: Ethernet, Ethernet, en0
+Serial ATA Device: APPLE HDD HTS727575A9E362, 750.16 GB
+Serial ATA Device: MATSHITADVD-R   UJ-8A8
+USB Device: FaceTime HD Camera (Built-in), apple_vendor_id, 0x8509, 0xfa200000 / 3
+USB Device: hub_device, 0x0424  (SMSC), 0x2513, 0xfa100000 / 2
+USB Device: hub_device, apple_vendor_id, 0x9126, 0xfa130000 / 6
+USB Device: GoFlex Desk Mac, 0x0bc2  (Seagate LLC), 0x6095, 0xfa131000 / 12
+USB Device: Keyboard Hub, apple_vendor_id, 0x1006, 0xfa132000 / 11
+USB Device: Apple Keyboard, apple_vendor_id, 0x0220, 0xfa132200 / 13
+USB Device: Apple LED Cinema Display, apple_vendor_id, 0x9226, 0xfa136000 / 10
+USB Device: Display Audio, apple_vendor_id, 0x1105, 0xfa134000 / 9
+USB Device: Display iSight, apple_vendor_id, 0x8508, 0xfa135000 / 8
+USB Device: BRCM2070 Hub, 0x0a5c  (Broadcom Corp.), 0x4500, 0xfa110000 / 5
+USB Device: Bluetooth USB Host Controller, apple_vendor_id, 0x821a, 0xfa113000 / 7
+USB Device: Apple Internal Keyboard / Trackpad, apple_vendor_id, 0x0252, 0xfa120000 / 4
+USB Device: hub_device, 0x0424  (SMSC), 0x2513, 0xfd100000 / 2
+USB Device: IR Receiver, apple_vendor_id, 0x8242, 0xfd110000 / 3
+
